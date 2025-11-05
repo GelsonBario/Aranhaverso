@@ -1,0 +1,20 @@
+.gallery {
+  padding-left: 0;
+}
+
+.gallery ul {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.gallery ul li a img {
+  border: 4px solid var(--white);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.gallery ul li a:hover img {
+  border-color: var(--primary-color);
+  transform: scale(1.05);
+}

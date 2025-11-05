@@ -1,0 +1,43 @@
+.link-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  background: transparent;
+  padding: 0;
+}
+
+.link-button .icon {
+  width: 32px;
+  height: 32px;
+  padding: 3px;
+  background-color: var(--primary-color);
+  border: solid 1px var(--white);
+  background-clip: content-box;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.link-button .icon .play-icon {
+  border: solid 7px var(--white);
+  width: 0;
+  height: 0;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  margin-left: 7px;
+}
+
+.link-button .label {
+  margin-left: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.link-button:hover .icon {
+  transform: scale(1.1);
+}
